@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./../../meta/main.css">
+    <style>
+        #sub h2:not(:first-child){
+            margin-top:1.5rem;
+        }
+        #sub span{
+            user-select: none;
+            color:lightgray;
+        }
+        #sub span:before{
+            content:" | ";
+        }
+        @media only screen and (max-width:450px) {
+            #sub span{
+                display:block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header></header>
+        <nav></nav>
+        <main>
+            <div class="flex">
+                <div id="side-nav"></div>
+                <div id="main">
+                    <h1 id="title"></h1>
+                    <hr>
+                    <div id="sub">
+                        <h2>2024</h2>
+                        <ul>
+                            <li>I'm Not Your Fucking Product<span>June 22</span></li>
+                            <li>Die For Me(And No One Else)<span>June 18</span></li>
+                            <li><a data-ref="friction">Friction</a><span>June 16</span></li>
+                            <li><a data-ref="fictophile">First to Ten (Fictophile)</a><span>June 5</span></li>
+                            <li>Head<span>June</span></li>
+                            <li>Elo (Remastered)<span>May 19</span></li>
+                            <li>Danger<span>April 23</span></li>
+                            <li>Orion's Belt<span>April 20</span></li>
+                            <li>Lies Well Said (Cover)<span>April 20</span></li>
+                            <li>Pinafore<span>April 19</span></li>
+                            <li>Lampshades<span>April 3</span></li>
+                        </ul>
+                        <h2>2023</h2>
+                        <ul>
+                            <li>I Can't Handle Change<span>October 7</span></li>
+                            <li>Realities<span>September 27</span></li>
+                            <li>Touch The Sky<span>September 29</span></li>
+                            <li>This Song Is Stupid<span>September 13</span></li>
+                            <li>720 Degrees<span>September 13</span></li>
+                            <li>Elo<span>September 3</span></li>
+                            <li>Worry Cat<span>August 1</span></li>
+                            <li>The Good Life<span>August 18</span></li>
+                            <li>Skadoodle<span>August 17</span></li>
+                            <li>Leave Me Alone<span>August 6</span></li>
+                            <li><a data-ref="lies-well-said">Lies Well Said</a><span>Febuary 14</span></li>
+                        </ul>
+                        <h2>2022</h2>
+                        <ul>
+                            <li>Glad.<span>Nov 15</span></li>
+                        </ul>
+                        <h2>2021</h2>
+                        <ul>
+                            <li>Adversaries<span>September 12</span></li>
+                            <li>Nyan Hat<span>Jul 19</span></li>
+                            <li>Stay<span>July 12</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="references"></div>
+        </main>
+        <footer></footer>
+    </div>
+    <div id="comments"></div>
+    <script src="./../../meta/main.js"></script>
+</body>
+</html>

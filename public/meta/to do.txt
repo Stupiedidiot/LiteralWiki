@@ -1,0 +1,15 @@
+    {
+        "link":"peanut",
+        "alt":"Peanut",
+        "tag":"character"
+    },
+    {
+        "link":"hat-boss",
+        "alt":"Hat's Boss",
+        "tag":"character"
+    },
+    {
+        "link":"fang-dad",
+        "alt":"Fang's Dad",
+        "tag":"character"
+    },

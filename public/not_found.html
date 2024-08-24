@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiteralWiki</title>
+    <link rel="stylesheet" id="styles">
+</head>
+<body>
+    <div id="container">
+        <header><img id="placeholder"></header>
+        <nav></nav>
+        <main>
+            <div class="padding">
+                <h1>Page Not Found</h1>
+                <p>Sorry for the inconvenience but it appears that the page you are looking for has either never exsisted, been deleted, or moved into a new location.</p>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    <div id="comments"></div>
+    <script id="script"></script>
+    <script>
+        url = window.location.pathname;
+        relativePath = "./";
+        urlPath = url.split('/');
+        if(urlPath.length > 2){for(i=0;i<urlPath.length-2;i++){relativePath+="../"}}
+        
+        document.getElementById("script").src = relativePath+"meta/main.js"
+        document.getElementById("styles").href = relativePath+"meta/main.css"
+        document.getElementById("placeholder").src = relativePath+"meta/missing.png"
+    </script>
+</body>
+</html>

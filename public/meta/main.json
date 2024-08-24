@@ -1,0 +1,117 @@
+[  
+    {
+        "link":"fictophile",
+        "alt":"Fictophile",
+        "tag":["animation","song"]
+    },
+    {
+        "link":"friction",
+        "alt":"Friction",
+        "tag":"song"
+    },
+    {
+        "link":"worry-cat",
+        "alt":"Worry Cat",
+        "tag":["animation","song"]  
+    },
+    {
+        "link":"leave-me-alone",
+        "alt":"Leave Me Alone",
+        "tag":"song"
+    },
+    {
+        "link":"lies-well-said",
+        "alt":"Lies Well Said",
+        "tag":"song"
+    },
+    {
+        "link":"TWOLH",
+        "alt":"The World Of Literal Hat",
+        "tag":"animation"
+    },
+    {
+        "link":"TWOLH-doubleDawn",
+        "alt":"Double Dawn | TWOLH",
+        "tag":"animation"
+    },
+    {
+        "link":"TWOLH-prologue",
+        "alt":"Prologue | TWOLH",
+        "tag":"animation"
+    },
+    {
+        "link":"characters",
+        "alt":"All Characters",
+        "tag":"catalog"
+    },
+    {
+        "link":"discography",
+        "alt":"Discography",
+        "tag":"catalog"
+    },
+    {
+        "link":"animations",
+        "alt":"Animated Videos",
+        "tag":"catalog"
+    },
+    {
+        "link":"hat",
+        "alt":"Hat",
+        "tag":"character"
+    },
+    {
+        "link":"chicken",
+        "alt":"Chicken Man",
+        "tag":"character"
+    },
+    {
+        "link":"pigtails",
+        "alt":"Pigtails",
+        "tag":"character"
+    },
+    {
+        "link":"lady",
+        "alt":"Lady",
+        "tag":"character"
+    },
+    {
+        "link":"fluffy",
+        "alt":"Fluffy",
+        "tag":"character"
+    },
+    {
+        "link":"pluto",
+        "alt":"Pluto",
+        "tag":"character"
+    },
+    {
+        "link":"dove",
+        "alt":"Dove",
+        "tag":"character"
+    },
+    {
+        "link":"aveline",
+        "alt":"Aveline",
+        "tag":"character"
+    },
+    {
+        "link":"art",
+        "alt":"Art",
+        "tag":"character"
+    },
+    {
+        "link":"fang",
+        "alt":"Fang",
+        "tag":"character"
+    },
+    {
+        "link":"marla",
+        "alt":"Marla",
+        "tag":"misc"
+    },
+    {
+        "link":"charlie",
+        "alt":"Charlie Cai",
+        "tag":"misc"
+    }
+]
