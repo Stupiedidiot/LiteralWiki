@@ -10,7 +10,7 @@
             padding:0;
             margin:0;
         }
-        #archive > ul > ul > li{
+        #archive > ul > ul > li, #archive > ul > ul > li:after{
             break-before:avoid-column;
         }
         #archive h2{
@@ -20,6 +20,15 @@
             #archive > ul {
                 columns:2;
             }
+        }
+        #character li:nth-of-type(3):after, #character li:nth-of-type(5):after,
+        #animation li:nth-of-type(2):after,#animation li:nth-of-type(5):after,
+        #song li:nth-of-type(4):after, #song li:nth-of-type(16):after{
+            content:"&nbsp";
+            user-select: none;
+            display: block;
+            color:white;
+            height:10px;
         }
     </style>
 </head>

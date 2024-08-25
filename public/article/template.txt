@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./../../meta/main.css">
+</head>
+<body>
+    <div id="container">
+        <header></header>
+        <nav></nav>
+        <main>
+            <div class="flex">
+                <div id="side-nav"></div>
+                <div id="main">
+                    <div class="profile">
+                        <h4>Name</h4>
+                        <img src="./../media/placeholder.png">
+                        <table>
+                            <tr>
+                                <th>Published On</th>
+                                <td>20</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h1 id="title"></h1>
+                    <div id="sub">
+                        <h2>Lyrics</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="references"></div>
+        </main>
+        <footer></footer>
+    </div>
+    <div id="comments"></div>
+    <script src="./../../meta/main.js"></script>
+</body>
+</html>
+
+<sup data-ref="#"></sup>
+<a data-ref="#"></a>

@@ -71,9 +71,9 @@ nav > div {
 }
 nav img{
     position: absolute;
-    width:80px;
+    width:100px;
     top:50%;
-    transform:translateY(-50%);
+    transform:translateY(-55%);
 }
 nav a, footer a{
     color:white;
