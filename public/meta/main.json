@@ -140,6 +140,36 @@
         "tag":"animation"
     },
     {
+        "link":"ready-to-die",
+        "alt":"Ready to Die",
+        "tag":"animation"
+    },
+    {
+        "link":"flop",
+        "alt":"FLOP 2020 Animation Thingy",
+        "tag":"animation"
+    },
+    {
+        "link":"animal-in-me",
+        "alt":"Animal in Me",
+        "tag":"animation"
+    },
+    {
+        "link":"devil-trigger",
+        "alt":"Pull My Devil Trigger",
+        "tag":"animation"
+    },
+    {
+        "link":"basements",
+        "alt":"Warmer in the Basement",
+        "tag":"animation"
+    },
+    {
+        "link":"absolute-territory",
+        "alt":"Absolute Territory",
+        "tag":"animation"
+    },
+    {
         "link":"thot-patrol",
         "alt":"Thot Patrol",
         "tag":"animation"
@@ -157,6 +187,31 @@
     {
         "link":"clear",
         "alt":"Clear",
+        "tag":"animation"
+    },
+    {
+        "link":"you-and-me",
+        "alt":"You and Me",
+        "tag":"animation"
+    },
+    {
+        "link":"tiktok",
+        "alt":"Tik Tok",
+        "tag":"animation"
+    },
+    {
+        "link":"issac",
+        "alt":"The Binding of Issac",
+        "tag":"animation"
+    },
+    {
+        "link":"drop-pop-candy",
+        "alt":"Drop Pop Candy",
+        "tag":"animation"
+    },
+    {
+        "link":"laser-and-lives",
+        "alt":"Laser and Lives",
         "tag":"animation"
     },
     {
