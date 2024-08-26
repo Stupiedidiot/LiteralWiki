@@ -49,12 +49,15 @@ navHTML='<a href='+relativePath+'index.html><img src="'+relativePath+'meta/hat-s
     '<a href="#">Random</a>'+
     chatBUTTON+"</div>"
 
-footerHTML = '<a href="'+relativePath+'meta/about.html">About</a><a href="'+relativePath+'meta/index.html" title="Records of what\'s changed">Changelog</a>'
+footerHTML = '<a href="'+relativePath+'meta/about.html">About</a>'+
+'<a href="'+relativePath+'blog.html">Blog</a>'+
+'<a href="'+relativePath+'meta/index.html" title="Records of what\'s changed">Changelog</a>'
 
 addToTag("head",faviconHTML)
 addToTag("nav",navHTML)
 addToTag("footer",footerHTML)
 
+// remember to fix this please :'D
 sideNavParts=document.querySelectorAll("#sub > *")
 if(sideNavParts.length>0){
     sideNavList=[]
@@ -117,7 +120,8 @@ if(url.includes("article/")){
                 getIndex(list)
                 addToId("title",list[currentIndex].alt)
                 document.title= list[currentIndex].alt+" | Literal Wiki"
-                
+
+                //WAAAAaaaaAAAAAaahh
                 refList=document.querySelectorAll("main a[data-ref]")
                 for(i=0;i<refList.length;i++){
                     linkIndex=getRefLink(list,i)
@@ -128,7 +132,6 @@ if(url.includes("article/")){
 
                 refList=document.querySelectorAll("main sup[data-ref]")
                 if(refList.length>0){
-                    //if(document.getElementById("references")){document.getElementById("references").classList="cont no-padding bg-dark-red"}
                     addToId("references",'<div class="padding"><h2>References</h2><div id="referencesList" class="cont no-border"></div></div>')
                 }
                 refContainer=createItem("ol",{})
