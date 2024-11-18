@@ -15,7 +15,7 @@ body{
     background-size: 200% 60px;
 }
 
-h1,h2,.meow-side > li{
+h1,h2{
     font-family:"Jersey 20";
     letter-spacing:3px;
  }
@@ -145,27 +145,28 @@ blockquote span:before{
     position:sticky;
     top:15px;
 }
-#side-nav div > li{
+#side-nav div > div{
     list-style-type:none;
     background-color:var(--light-red);
     padding:8px 5px;
     border:4px solid black;
     border-right:0;
 }
-#side-nav div > li:not(:first-of-type){
+#side-nav div > div:not(:first-of-type){
     margin-top:5px;
 }
-#side-nav div > li:nth-of-type(2n){background-color:var(--red);}
-#side-nav div > li:nth-of-type(3n){background-color:var(--dark-red);}
-#side-nav div > ul{
+#side-nav div > div:nth-of-type(2n){background-color:var(--red);}
+#side-nav div > div:nth-of-type(3n){background-color:var(--dark-red);}
+#side-nav div > li{
     margin-left:15px;
-    padding-bottom:5px;
+    padding-left:25px;
     background-color:black;
     color:white;
-    border:4px solid black;
-    border-right:0;
     list-style-type:square;
+    margin-top:0;
 }
+#side-nav div > li.last-item{padding-bottom:10px;}
+
 #main{
     flex:3;
     padding:1rem;
@@ -176,7 +177,7 @@ blockquote span:before{
     color:var(--dark-red);
 }
 .profile{
-    max-width:250px;
+    width:250px;
     background-color:var(--red);
     border:4px solid black;
     padding:10px;
@@ -226,11 +227,28 @@ div.image img{
     width:100%;
 }
 
+.list span{
+    user-select: none;
+    color:lightgray;
+}
+.list span:before{
+    content:" | ";
+}
+.list a{
+    color: black !important;;
+}
+@media only screen and (max-width:450px) {
+    .list span{
+        display:block;
+    }
+}
+
 .yt-embed {
     position: relative;
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
+    margin-bottom:1rem;
 }
 
 .yt-embed > iframe {
@@ -275,7 +293,7 @@ div.image img{
     color:white;
 }
 
-@media only screen and (min-width: 621px) {
+@media only screen and (min-width: 651px) {
     .profile{
         margin-left:1rem;
         margin-bottom:1rem;
@@ -285,7 +303,7 @@ div.image img{
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 650px) {
     .flex{
         display:block;
     }

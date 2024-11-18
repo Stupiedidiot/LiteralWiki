@@ -1,5 +1,45 @@
 [  
     {
+        "link":"let-go",
+        "alt":"Let Go!",
+        "tag":"album"
+    },
+    {
+        "link":"danger",
+        "alt":"Danger",
+        "tag":"song"
+    },
+    {
+        "link":"let-go_tomorrow",
+        "alt":"Tomorrow",
+        "tag":"song"
+    },
+    {
+        "link":"let-go_firebird-migration",
+        "alt":"The Firebird Migration",
+        "tag":"song"
+    },
+    {
+        "link":"let-go_hearts-tape",
+        "alt":"Hearts Tape",
+        "tag":"song"
+    },
+    {
+        "link":"let-go_salt-shackles",
+        "alt":"Salt Shackles",
+        "tag":"song"
+    },
+    {
+        "link":"let-go_breathe",
+        "alt":"Breathe",
+        "tag":"song"
+    },
+    {
+        "link":"let-go_we-cant-be-together",
+        "alt":"We Cant't Be Together",
+        "tag":"song"
+    },
+    {
         "link":"fictophile",
         "alt":"Fictophile",
         "tag":["animation","song"]
@@ -27,11 +67,6 @@
     {
         "link":"friction",
         "alt":"Friction",
-        "tag":"song"
-    },
-    {
-        "link":"danger",
-        "alt":"Danger",
         "tag":"song"
     },
     {
@@ -95,17 +130,17 @@
         "tag":"song"
     },
     {
-        "link":"TWOLH",
+        "link":"twolh",
         "alt":"The World Of Literal Hat",
         "tag":"animation"
     },
     {
-        "link":"TWOLH-doubleDawn",
+        "link":"twolh_doubleDawn",
         "alt":"Double Dawn | TWOLH",
         "tag":"animation"
     },
     {
-        "link":"TWOLH-prologue",
+        "link":"twolh_prologue",
         "alt":"Prologue | TWOLH",
         "tag":"animation"
     },
@@ -292,6 +327,11 @@
     {
         "link":"charlie",
         "alt":"Charlie Cai",
+        "tag":"misc"
+    },
+    {
+        "link":"template",
+        "alt":"Template Page",
         "tag":"misc"
     }
 ]

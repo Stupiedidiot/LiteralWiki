@@ -10,7 +10,7 @@
             padding:0;
             margin:0;
         }
-        #archive > ul > ul > li, #archive > ul > ul > li:after{
+        #archive > ul > ul > li, #archive > ul > ul > li:after, #archive > ul > ul > li:after{
             break-before:avoid-column;
         }
         #archive h2{
@@ -23,7 +23,7 @@
         }
         #character li:nth-of-type(3):after, #character li:nth-of-type(5):after,
         #animation li:nth-of-type(2):after,#animation li:nth-of-type(5):after,#animation li:nth-of-type(18):after,
-        #song li:nth-of-type(4):after, #song li:nth-of-type(16):after{
+        #song li:nth-of-type(1):after,#song li:nth-of-type(7):after,#song li:nth-of-type(11):after, #song li:nth-of-type(23):after{
             content:"&nbsp";
             user-select: none;
             display: block;
@@ -51,6 +51,10 @@
     
                         <h2>Animations</h2>
                         <ul id="animation">
+                        </ul>
+
+                        <h2>Albums</h2>
+                        <ul id="album">
                         </ul>
     
                         <h2>Songs</h2>

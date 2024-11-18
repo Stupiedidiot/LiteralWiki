@@ -57,36 +57,29 @@ addToTag("head",faviconHTML)
 addToTag("nav",navHTML)
 addToTag("footer",footerHTML)
 
-// remember to fix this please :'D
-sideNavParts=document.querySelectorAll("#sub > *")
+sideNavParts=document.querySelectorAll("#sub > H2,#sub > H3")
 if(sideNavParts.length>0){
-    sideNavList=[]
-    for(i=0, current=-1;i<sideNavParts.length;i++){
+    test=""
+    for(i=0;i<sideNavParts.length;i++){
         if(sideNavParts[i].nodeName==="H2"){
             selected=sideNavParts[i].outerText
-            sideNavList.push([selected,[]])
-            sideNavParts[i].id=selected.replaceAll(" ","-")
-            current++
+            selectedAnchor=selected.replaceAll(" ","-")
+            sideNavParts[i].id=selectedAnchor
+            test+='<div><a href="#'+selectedAnchor+'">'+selected+'</a></div>'
         } else if (sideNavParts[i].nodeName==="H3"){
             selected=sideNavParts[i].outerText
-            sideNavParts[i].id=selected.replaceAll(" ","-")
-            sideNavList[current][1].push(selected)
+            selectedAnchor=selected.replaceAll(" ","-")
+            sideNavParts[i].id=selectedAnchor
+
+            // what in the what????
+            if(sideNavParts[i+1]){
+                if(sideNavParts[i+1].nodeName==="H2"){test+='<li class="last-item"><a href="#'+selectedAnchor+'">'+selected+'</a></li>'}
+                else{test+='<li><a href="#'+selectedAnchor+'">'+selected+'</a></li>'}
+            } else {test+='<li class="last-item"><a href="#'+selectedAnchor+'">'+selected+'</a></li>'}
         }
     }
     addToId("side-nav",createItem("div",{id:"side-nav-container"}))
-    for(i=0;i<sideNavList.length;i++){
-        listItem=createItem("li",{input:createItem("a",{input:sideNavList[i][0],href:"#"+sideNavList[i][0].replaceAll(" ","-")})})
-        if(sideNavList[i][1].length>0){
-            listItem_2=createItem("ul",{})
-            for(x=0;x<sideNavList[i][1].length;x++){
-                addTo(listItem_2,createItem("a",{input:createItem("li",{input:sideNavList[i][1][x]}),href:"#"+sideNavList[i][1][x].replaceAll(" ","-")}))
-            }
-        }
-        addToId("side-nav-container",listItem)
-        if(sideNavList[i][1].length>0){
-            addToId("side-nav-container",listItem_2)
-        }
-    }
+    addToId("side-nav-container",test)
 }
 
 images=document.querySelectorAll(".image")
@@ -125,9 +118,16 @@ if(url.includes("article/")){
                 refList=document.querySelectorAll("main a[data-ref]")
                 for(i=0;i<refList.length;i++){
                     linkIndex=getRefLink(list,i)
-                    link=relativePath+"article/"+getDirectory(list[linkIndex]);
-                    refList[i].href=link
-                    refList[i].title=list[linkIndex].alt
+
+                    if(linkIndex>-1){
+                        link=relativePath+"article/"+getDirectory(list[linkIndex]);
+                        refList[i].href=link
+                        refList[i].title=list[linkIndex].alt
+                        if(refList[i].innerHTML===""){refList[i].innerHTML=list[linkIndex].alt}
+                    } else {
+                        refList[i].innerHTML="??"
+                        console.log(i+": Undefined Article")
+                    }
                 }
 
                 refList=document.querySelectorAll("main sup[data-ref]")
@@ -153,13 +153,15 @@ if(url.includes("article/")){
                 addToId("referencesList",refContainer)
             }
         })
-    //remember to changes this
+        
     function getRefLink(x,y){
+        y=refList[y].dataset.ref.toLowerCase();
         for(z=0;z<x.length;z++){
-            if(x[z].link===refList[y].dataset.ref){
+            if(x[z].link===y){
                 return z
             }
         }
+        return -1
     }
 
     function getDirectory(x){
