@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiteralWiki</title>
     <link rel="stylesheet" href="./../meta/main.css">
+    <title>Archive | LiteralWiki</title>
     <style>
-        #archive > ul {
-            padding:0;
-            margin:0;
+        #archive {
+            display:flex;
         }
-        #archive > ul > ul > li, #archive > ul > ul > li:after, #archive > ul > ul > li:after{
-            break-before:avoid-column;
+        #archive > div{
+            flex:1;
         }
-        #archive h2{
+        #archive h2:not(:firstt-child){
             padding-top:1rem;
         }
-        @media only screen and (min-width: 525px) {
-            #archive > ul {
-                columns:2;
-            }
-        }
-        #character li:nth-of-type(3):after, #character li:nth-of-type(5):after,
-        #animation li:nth-of-type(2):after,#animation li:nth-of-type(5):after,#animation li:nth-of-type(18):after,
-        #song li:nth-of-type(1):after,#song li:nth-of-type(7):after,#song li:nth-of-type(11):after, #song li:nth-of-type(23):after{
+        #archive a {color:black;}
+
+        #character li:has(a[href="character/pigtails.html"]):after, #character li:has(a[href="character/art.html"]):after,
+        #song li:has(a[href="song/danger.html"]):after, #song li:has(a[href="song/let-go_we-cant-be-together.html"]):after, #song li:has(a[href="song/elo.html"]):after,
+        #animation li:has(a[href="animation/worry-cat.html"]):after, #animation li:has(a[href="animation/twolh_prologue.html"]):after, #animation li:has(a[href="animation/absolute-territory.html"]):after 
+        {
             content:"&nbsp";
             user-select: none;
             display: block;
@@ -33,43 +30,34 @@
     </style>
 </head>
 <body>
-    <div id="container">
-        <header></header>
-        <nav></nav>
-        <main>
-            <div class="padding bg-light-gray">
-                <h1>Pages Archive</h1>
-                <div id="archive" class="padding bg-white">
-                    <ul>
-                        <h2>Catalog</h2>
-                        <ul id="catalog">
-                        </ul>
     
-                        <h2>Characters</h2>
-                        <ul id="character">
-                        </ul>
-    
-                        <h2>Animations</h2>
-                        <ul id="animation">
-                        </ul>
+    <div class="main-content padding bg-light-gray">
+        <h1>Pages Archive</h1>
+        <div id="archive" class="padding bg-white">
+            <div>
+                <h2>Catalog</h2>
+                <ul id="catalog"></ul>
 
-                        <h2>Albums</h2>
-                        <ul id="album">
-                        </ul>
-    
-                        <h2>Songs</h2>
-                        <ul id="song">
-                        </ul>
-    
-                        <h2>Miscellaneous</h2>
-                        <ul id="misc">
-                        </ul>
-                    </ul>
-                </div>
+                <h2>Characters</h2>
+                <ul id="character"></ul>
+
+                <h2>Animations</h2>
+                <ul id="animation"></ul>
             </div>
-        </main>
-        <footer></footer>
+
+            <div>
+                <h2>Albums</h2>
+                <ul id="album"></ul>
+
+                <h2>Songs</h2>
+                <ul id="song"></ul>
+
+                <h2>Miscellaneous</h2>
+                <ul id="misc"></ul>
+            </div>
+        </div>
     </div>
-    <script src="./../meta/main.js"></script>
+
+<script src="./../meta/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,14 @@
-[  
+[
+    {
+        "link":"all-your-idols-will-be-dead",
+        "alt":"All Your Idols Will Be Dead",
+        "tag":"song"
+    },  
+    {
+        "link":"fell-in-love-with-a-girl",
+        "alt":"Fell in Love With a Girl",
+        "tag":"song"
+    },
     {
         "link":"let-go",
         "alt":"Let Go!",
@@ -36,7 +46,7 @@
     },
     {
         "link":"let-go_we-cant-be-together",
-        "alt":"We Cant't Be Together",
+        "alt":"We Can't Be Together",
         "tag":"song"
     },
     {
@@ -320,13 +330,18 @@
         "tag":"character"
     },
     {
+        "link":"charlie",
+        "alt":"Charlie Cai",
+        "tag":"misc"
+    },
+    {
         "link":"marla",
         "alt":"Marla",
         "tag":"misc"
     },
     {
-        "link":"charlie",
-        "alt":"Charlie Cai",
+        "link":"mel",
+        "alt":"Mel",
         "tag":"misc"
     },
     {
