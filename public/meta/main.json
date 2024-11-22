@@ -145,7 +145,7 @@
         "tag":"animation"
     },
     {
-        "link":"twolh_doubleDawn",
+        "link":"twolh_double-dawn",
         "alt":"Double Dawn | TWOLH",
         "tag":"animation"
     },
@@ -155,7 +155,7 @@
         "tag":"animation"
     },
     {
-        "link":"bs-gun-test",
+        "link":"bs-gun-tests",
         "alt":"Hat BS Gun Animation Test",
         "tag":"animation"
     },
@@ -171,17 +171,22 @@
     },
     {
         "link":"flugblatter",
-        "alt":"Flugblätter",
+        "alt":"Flugbläntter",
         "tag":"animation"
     },
     {
         "link":"bike-slide",
         "alt":"Lady Bike Slide",
         "tag":"animation"
-    },
+},
     {
         "link":"faded-heart",
         "alt":"Faded Heart",
+        "tag":"animation"
+    },
+    {
+        "link":"gun-tests",
+        "alt":"Gun Tests",
         "tag":"animation"
     },
     {
@@ -200,12 +205,12 @@
         "tag":"animation"
     },
     {
-        "link":"devil-trigger",
+        "link":"pull-my-devil-trigger",
         "alt":"Pull My Devil Trigger",
         "tag":"animation"
     },
     {
-        "link":"basements",
+        "link":"warmer-in-the-basement",
         "alt":"Warmer in the Basement",
         "tag":"animation"
     },

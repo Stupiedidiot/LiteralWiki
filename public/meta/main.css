@@ -319,8 +319,8 @@ div.image img{
     .flex{
         display:block;
     }
-    #main{
-        border-left:0;
+    #side-nav{
+        border-right:0;
     }
     div.image,.profile{
         float:none;
