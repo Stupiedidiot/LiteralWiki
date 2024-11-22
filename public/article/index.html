@@ -12,10 +12,16 @@
         #archive > div{
             flex:1;
         }
-        #archive h2:not(:firstt-child){
+        #archive h2:not(:first-child){
             padding-top:1rem;
         }
         #archive a {color:black;}
+
+        @media only screen and (max-width: 650px) {
+            #archive{
+                display:block;
+            }
+        }
 
         #character li:has(a[href="character/pigtails.html"]):after, #character li:has(a[href="character/art.html"]):after,
         #song li:has(a[href="song/danger.html"]):after, #song li:has(a[href="song/let-go_we-cant-be-together.html"]):after, #song li:has(a[href="song/elo.html"]):after,
