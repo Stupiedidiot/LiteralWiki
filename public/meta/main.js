@@ -19,7 +19,6 @@ navigation='\
 footer='\
 <a href="' + relativePath + 'meta/about.html">About</a>\
 <a href="' + relativePath + 'blog.html">Blog</a>\
-<a href="'+relativePath+'meta/index.html" title="Records of what\'s changed">Changelog</a>\
 '
 
 template='\
@@ -131,7 +130,7 @@ if(url.includes("article/")){
 
                     if(linkIndex>-1){
                         link=relativePath+"article/"+getDirectory(list[linkIndex]);
-                        refList[i].href=link
+                        refList[i].href=link+refList[i].href
                         refList[i].title=list[linkIndex].alt
                         if(refList[i].innerHTML===""){refList[i].innerHTML=list[linkIndex].alt}
                     } else {
