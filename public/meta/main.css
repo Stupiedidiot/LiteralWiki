@@ -12,7 +12,7 @@ body{
     padding:0;
     font-family: "M PLus 1 Code";
     background: linear-gradient(to bottom, #101010, #101010 48%, #1b1b1b 48%, #1b1b1b);
-    background-size: 200% 60px;
+    background-size: 100% 60px;
 }
 
 h1,h2{
